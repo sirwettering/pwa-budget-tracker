@@ -18,6 +18,14 @@ THEN they will receive a notification that they have added an expense or deposit
 WHEN the user reestablishes an internet connection
 THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
 
+## Example Image
+
+![Budget Tracker](screenshot1.png)
+
 ## Live URL
 
-[Budget Tracker](https://radiant-meadow-93507.herokuapp.com/)
+[Try the Budget Traker Here!](https://radiant-meadow-93507.herokuapp.com/)
+
+## GitHub URL
+
+[Visit the Reposittory Here!](https://github.com/sirwettering/pwa-budget-tracker)
