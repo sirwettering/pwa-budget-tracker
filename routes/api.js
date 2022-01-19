@@ -1,5 +1,13 @@
 const router = require("express").Router();
 const Transaction = require("../models/transaction.js");
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://wwettering:<916919u916919W>@pwa-budget-tracker.yyfvi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 router.post("/api/transaction", ({body}, res) => {
   Transaction.create(body)
